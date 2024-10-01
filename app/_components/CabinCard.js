@@ -17,14 +17,14 @@ function CabinCard({ cabin }) {
       </div>
 
       <div className="flex-grow">
-        <div className="pt-5 pb-4 px-7 bg-primary-950">
-          <h3 className="mb-3 text-2xl font-semibold text-accent-500">
+        <div className="px-4 pt-5 pb-2 sm:pb-4 sm:px-7 bg-primary-950">
+          <h3 className="mb-1 font-semibold sm:mb-3 sm:text-2xl text-accent-500">
             Cabin {name}
           </h3>
 
-          <div className="flex items-center gap-3 mb-2">
-            <UsersIcon className="w-5 h-5 text-primary-600" />
-            <p className="text-lg text-primary-200">
+          <div className="flex items-center gap-3 mb-1 sm:mb-2">
+            <UsersIcon className="size-5 text-primary-600" />
+            <p className="sm:text-lg text-primary-200">
               For up to <span className="font-bold">{maxCapacity}</span> guests
             </p>
           </div>
