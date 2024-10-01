@@ -18,13 +18,13 @@ async function Page() {
       {/* Card-1 */}
       <div className="flex flex-col gap-10 md:flex-row">
         <div>
-          <h1 className="text-4xl font-medium sm:mb-10 text-accent-400">
+          <h1 className="text-4xl font-medium text-center sm:text-left sm:mb-10 text-accent-400">
             Welcome to The Wild Oasis
           </h1>
 
           <Buttons className="sm:hidden" />
 
-          <div className="mt-5 space-y-8 sm:mt-0">
+          <div className="mt-5 space-y-8 text-center sm:mt-0 sm:text-left">
             <p>
               Where nature&apos;s beauty and comfortable living blend
               seamlessly. Hidden away in the heart of the Italian Dolomites,
@@ -65,11 +65,11 @@ async function Page() {
           alt="Family that manages The Wild Oasis"
         />
         <div>
-          <h1 className="mb-10 text-4xl font-medium text-accent-400">
+          <h1 className="mb-10 text-4xl font-medium text-center sm:text-left text-accent-400">
             Managed by our family since 1962
           </h1>
 
-          <div className="space-y-8">
+          <div className="space-y-8 text-center sm:text-left">
             <p>
               Since 1962, The Wild Oasis has been a cherished family-run
               retreat. Started by our grandparents, this haven has been nurtured
