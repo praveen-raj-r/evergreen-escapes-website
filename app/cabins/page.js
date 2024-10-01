@@ -28,7 +28,7 @@ export default function Page({ searchParams }) {
         Welcome to paradise.
       </p>
 
-      <div className="flex justify-end mb-8">
+      <div className="flex justify-center mb-8 sm:justify-end">
         <Filter />
       </div>
 
