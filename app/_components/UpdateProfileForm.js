@@ -12,7 +12,7 @@ function UpdateProfileForm({ children, guest }) {
   return (
     <form
       action={updateGuest}
-      className="flex flex-col gap-6 px-12 py-8 text-lg bg-primary-900"
+      className="flex flex-col gap-4 px-6 py-4 rounded-lg sm:gap-6 md:text-lg sm:py-8 sm:px-12 bg-primary-900"
     >
       <div className="space-y-2">
         <label>Full name</label>
@@ -56,7 +56,7 @@ function UpdateProfileForm({ children, guest }) {
         />
       </div>
 
-      <div className="flex items-center justify-end gap-6">
+      <div className="flex items-center justify-center gap-6 sm:justify-end">
         <SubmitButton pendingLabel="Updating...">Update Profile</SubmitButton>
       </div>
     </form>
