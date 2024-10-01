@@ -26,8 +26,8 @@ function ReservationForm({ cabin, user }) {
   const createBookingWithData = createBooking.bind(null, bookingData);
 
   return (
-    <div className="scale-[1.01]">
-      <div className="flex items-center justify-between px-3 py-4 md:px-16 bg-primary-800 text-primary-300">
+    <div>
+      <div className="flex flex-col items-center justify-between gap-2 px-3 py-4 sm:gap-0 sm:flex-row md:px-16 bg-primary-800 text-primary-300">
         <p>Logged in as</p>
 
         <div className="flex items-center gap-4">
@@ -42,17 +42,13 @@ function ReservationForm({ cabin, user }) {
         </div>
       </div>
 
-      <p>
-        {String(range.from)} to {String(range.to)}
-      </p>
-
       <form
         // action={createBookingWithData}
         action={async (formData) => {
           await createBookingWithData(formData);
           resetRange();
         }}
-        className="flex flex-col gap-5 px-8 py-5 text-lg sm:py-10 sm:px-16 bg-primary-900"
+        className="flex flex-col gap-5 px-4 py-5 sm:text-lg sm:py-10 sm:px-16 bg-primary-900"
       >
         <div className="space-y-2">
           <label htmlFor="numGuests">How many guests?</label>
