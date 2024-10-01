@@ -17,7 +17,7 @@ async function CabinList({ filter }) {
 
   if (filter === "medium")
     displayedCabins = cabins.filter(
-      (cabin) => cabin.maxCapacity >= 4 && cabin.maxCapacity <= 3
+      (cabin) => cabin.maxCapacity >= 4 && cabin.maxCapacity <= 7
     );
 
   if (filter === "large")
