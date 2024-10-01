@@ -5,8 +5,8 @@ export default async function Navigation() {
   const session = await auth();
 
   return (
-    <nav className="z-10 text-xl">
-      <ul className="flex items-center gap-16">
+    <nav className="z-10 text-[22px]">
+      <ul className="flex items-center gap-5 sm:gap-16">
         <li>
           <Link
             href="/cabins"
@@ -35,7 +35,7 @@ export default async function Navigation() {
                 className="h-8 rounded-full"
                 alt={session.user.name}
               />
-              <span>Guest area</span>
+              {/* <span>Guest area</span> */}
             </Link>
           ) : (
             <Link
