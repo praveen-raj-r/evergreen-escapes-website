@@ -38,3 +38,14 @@
   --rdp-background-color: theme("colors.accent.600") !important;
   margin: 0 !important;
 }
+
+@media (max-width: 560px) {
+  .rdp-months {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .rdp-month {
+    margin: 0 !important;
+  }
+}

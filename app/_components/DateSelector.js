@@ -37,7 +37,7 @@ function DateSelector({ settings, bookedDates, cabin }) {
       <DayPicker
         selected={displayRange}
         onSelect={setRange}
-        className="pt-12 place-self-center"
+        className="py-6 lg:py-12 place-self-center"
         mode="range"
         min={minBookingLength + 1}
         max={maxBookingLength}
@@ -52,31 +52,35 @@ function DateSelector({ settings, bookedDates, cabin }) {
         }
       />
 
-      <div className="flex items-center justify-between px-8 bg-accent-500 text-primary-800 h-[72px]">
-        <div className="flex items-baseline gap-6">
-          <p className="flex items-baseline gap-2">
-            {discount > 0 ? (
-              <>
-                <span className="text-2xl">${regularPrice - discount}</span>
-                <span className="font-semibold line-through text-primary-700">
-                  ${regularPrice}
-                </span>
-              </>
-            ) : (
-              <span className="text-2xl">${regularPrice}</span>
-            )}
-            <span className="">/night</span>
-          </p>
-          {numNights ? (
-            <>
-              <p className="px-3 py-2 text-2xl bg-accent-600">
+      <div className="flex items-center justify-between px-8 bg-accent-500 text-primary-800 ">
+        <div className="flex flex-col items-baseline gap-1 my-3 md:gap-6 md:flex-row">
+          <div className="flex items-center gap-3 ">
+            <p className="flex items-baseline gap-2">
+              {discount > 0 ? (
+                <>
+                  <span className="md:text-2xl">
+                    ${regularPrice - discount}
+                  </span>
+                  <span className="font-semibold line-through text-primary-700">
+                    ${regularPrice}
+                  </span>
+                </>
+              ) : (
+                <span className="md:text-2xl">${regularPrice}</span>
+              )}
+              <span className="">/night</span>
+            </p>
+            {numNights ? (
+              <p className="px-1 md:py-2 md:px-3 md:text-2xl bg-accent-600">
                 <span>&times;</span> <span>{numNights}</span>
               </p>
-              <p>
-                <span className="text-lg font-bold uppercase">Total</span>{" "}
-                <span className="text-2xl font-semibold">${cabinPrice}</span>
-              </p>
-            </>
+            ) : null}
+          </div>
+          {numNights ? (
+            <p>
+              <span className="font-bold uppercase md:text-lg">Total</span>{" "}
+              <span className="font-semibold md:text-2xl">${cabinPrice}</span>
+            </p>
           ) : null}
         </div>
 
