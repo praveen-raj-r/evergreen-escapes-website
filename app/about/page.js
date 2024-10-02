@@ -19,7 +19,7 @@ async function Page() {
       <div className="flex flex-col gap-10 md:flex-row">
         <div>
           <h1 className="text-4xl font-medium text-center sm:text-left sm:mb-10 text-accent-400">
-            Welcome to The Wild Oasis
+            Welcome to Evergreen Escapes
           </h1>
 
           <Buttons className="sm:hidden" />
@@ -62,7 +62,7 @@ async function Page() {
           className="h-auto sm:h-[400px] md:h-[350px] lg:h-[400px]"
           src={image2}
           quality={80}
-          alt="Family that manages The Wild Oasis"
+          alt="Family that manages Evergreen Escapes"
         />
         <div>
           <h1 className="mb-10 text-4xl font-medium text-center sm:text-left text-accent-400">
@@ -71,18 +71,18 @@ async function Page() {
 
           <div className="space-y-8 text-center sm:text-left">
             <p>
-              Since 1962, The Wild Oasis has been a cherished family-run
+              Since 1962, Evergreen Escapes has been a cherished family-run
               retreat. Started by our grandparents, this haven has been nurtured
               with love and care, passing down through our family as a testament
               to our dedication to creating a warm, welcoming environment.
             </p>
             <p>
-              Over the years, we&apos;ve maintained the essence of The Wild
-              Oasis, blending the timeless beauty of the mountains with the
+              Over the years, we&apos;ve maintained the essence of Evergreen
+              Escapes, blending the timeless beauty of the mountains with the
               personal touch only a family business can offer. Here, you&apos;re
               not just a guest; you&apos;re part of our extended family. So join
-              us at The Wild Oasis soon, where tradition meets tranquility, and
-              every visit is like coming home.
+              us at Evergreen Escapes soon, where tradition meets tranquility,
+              and every visit is like coming home.
             </p>
           </div>
         </div>
