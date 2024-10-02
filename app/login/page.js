@@ -7,7 +7,7 @@ export const metadata = {
 export default function Page() {
   return (
     <div className="flex flex-col items-center gap-10 mt-10">
-      <h2 className="text-3xl font-semibold">
+      <h2 className="mx-3 text-xl font-semibold text-center sm:text-3xl">
         Sign in to access your guest area
       </h2>
 
