@@ -11,10 +11,10 @@ function Logo() {
         height="60"
         width="60"
         quality={100}
-        alt="The Wild Oasis logo"
+        alt="Evergreen Escapes logo"
       />
       <span className="text-xl font-semibold text-primary-100">
-        The Wild Oasis
+        Evergreen Escapes
       </span>
     </Link>
   );
